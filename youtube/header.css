@@ -71,6 +71,43 @@
     border-color: rgb(199, 194, 194);
     margin-left: -1px;
 }
+.search-button,
+.voice-button,
+.upload-logo,
+.app-logo,
+.notifi-logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.search-button .tool-tip,
+.voice-button .tool-tip,
+.upload-logo .tool-tip,
+.app-logo .tool-tip,
+.notifi-logo .tool-tip{
+    position: absolute;
+    background-color: gray;
+    color: rgb(255, 255, 255);
+    padding-top: 4px;;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 12px;
+    font-family: 'Roboto',Arial;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tool-tip,
+.voice-button:hover .tool-tip,
+.upload-logo:hover .tool-tip,
+.app-logo:hover .tool-tip,
+.notifi-logo:hover .tool-tip{
+    opacity: 1;
+}
 .voice-button{
     border: none;
     margin-left: 10px;
